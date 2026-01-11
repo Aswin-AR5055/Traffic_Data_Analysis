@@ -1,0 +1,59 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Jupyter / Streamlit
+# =========================
+.ipynb_checkpoints/
+.streamlit/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+nohup.out
+
+# =========================
+# Terraform
+# =========================
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+crash.log
+
+# =========================
+# Docker
+# =========================
+*.tar
+docker-compose.override.yml
+
+# =========================
+# Secrets / Keys
+# =========================
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
