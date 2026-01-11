@@ -20,7 +20,7 @@ The application is deployed on an AWS EC2 instance and can be accessed here:
 - Interactive web interface built with Streamlit
 - Dockerized application with Docker Compose
 - Infrastructure provisioned using Terraform
-- Terraform remote state using S3 and DynamoDB
+- Terraform remote state using S3
 - Fully automated CI/CD pipeline (zero manual SSH)
 - Deterministic deployments using Git hard reset
 
