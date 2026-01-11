@@ -25,7 +25,7 @@ def load_data():
 
 data = load_data()
 
-st.subheader("📄 Dataset Preview")
+st.subheader("Dataset Preview")
 st.dataframe(data.head())
 
 data = clean_data(data)
