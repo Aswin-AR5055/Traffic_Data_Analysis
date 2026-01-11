@@ -8,7 +8,7 @@ def train_model(data):
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-    model = DecisionTreeClassifier()
+    model = DecisionTreeClassifier(random_state=42, max_depth=5, min_samples_split=10)
     model.fit(x_train, y_train)
 
     preds = model.predict(x_test)
