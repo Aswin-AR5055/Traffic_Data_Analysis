@@ -129,7 +129,6 @@ http://localhost:8501
 - EC2 instance is provisioned using Terraform
 - AMI is dynamically fetched using a data source
 - Terraform state is stored remotely in S3
-- State locking is enabled using DynamoDB
 
 ```bash
 terraform init
@@ -155,7 +154,7 @@ On every push to the `main` branch:
 This ensures:
 - No merge conflicts
 - No configuration drift
-- Production always matches `main`
+- Production always matches `master`
 
 ---
 
