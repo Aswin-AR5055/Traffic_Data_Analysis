@@ -50,26 +50,29 @@ with col2:
     ax2.set_ylabel("Accident Count")
     st.pyplot(fig2)
 
-st.markdown("Accidents by Weather Condition")
-fig3, ax3 = plt.subplots()
-sns.countplot(
-    x="Weather",
-    data=data,
-    order=data["Weather"].value_counts().index,
-    ax=ax3
-)
-ax3.set_xlabel("Weather Condition")
-ax3.set_ylabel("Accident Count")
-plt.xticks(rotation=45)
-st.pyplot(fig3)
+col3, col4 = st.columns(2)
+with col3:
+    st.markdown("Accidents by Weather Condition")
+    fig3, ax3 = plt.subplots()
+    sns.countplot(
+        x="Weather",
+        data=data,
+        order=data["Weather"].value_counts().index,
+        ax=ax3
+    )
+    ax3.set_xlabel("Weather Condition")
+    ax3.set_ylabel("Accident Count")
+    plt.xticks(rotation=45)
+    st.pyplot(fig3)
 
-st.markdown("Weekday vs Weekend Accidents")
-fig4, ax4 = plt.subplots()
-sns.countplot(x="Is_Weekend", data=data, ax=ax4)
-ax4.set_xticklabels(["Weekday", "Weekend"])
-ax4.set_xlabel("Day Type")
-ax4.set_ylabel("Accident Count")
-st.pyplot(fig4)
+with col4:
+    st.markdown("Weekday vs Weekend Accidents")
+    fig4, ax4 = plt.subplots()
+    sns.countplot(x="Is_Weekend", data=data, ax=ax4)
+    ax4.set_xticklabels(["Weekday", "Weekend"])
+    ax4.set_xlabel("Day Type")
+    ax4.set_ylabel("Accident Count")
+    st.pyplot(fig4)
 
 st.subheader("Machine Learning Model")
 
