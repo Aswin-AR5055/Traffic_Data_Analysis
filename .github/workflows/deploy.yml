@@ -27,10 +27,11 @@ jobs:
                         sudo usermod -aG docker ubuntu
                     fi
 
-                    if [ ! -d "traffic-accident-ml" ]; then
+                    if [ ! -d "Traffic_Data_Analysis" ]; then
                         git clone https://github.com/${{ github.repository }}.git
                     fi
-                    cd traffic-accident-ml
+
+                    cd Traffic_Data_Analysis
                     git fetch origin
                     git reset --hard origin/master
                     git clean -fd
