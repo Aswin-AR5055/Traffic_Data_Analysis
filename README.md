@@ -65,7 +65,6 @@ These insights help understand temporal and environmental factors influencing ac
 - Terraform
 - AWS EC2
 - AWS S3 (Terraform remote state)
-- AWS DynamoDB (state locking)
 - GitHub Actions (CI/CD)
 
 ---
