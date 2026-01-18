@@ -25,10 +25,14 @@ def load_data():
 
 data = load_data()
 
-st.subheader("Dataset Preview")
-st.dataframe(data.head())
+st.subheader("Dataset Preview(Before: preprocessing)")
+raw_data = data.copy()
+st.dataframe(raw_data.head())
 
 data = clean_data(data)
+
+st.subheader("Dataset Preview(After Preprocessing)")
+st.dataframe(data.head())
 
 st.subheader("Exploratory Data Analysis")
 
