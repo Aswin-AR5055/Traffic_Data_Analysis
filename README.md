@@ -5,7 +5,7 @@ The application is containerized using Docker, deployed on AWS EC2 using Terrafo
 
 ---
 
-## Live Demo
+## Live Demo (Server terminated due to AWS costs)
 
 The application is deployed on an AWS EC2 instance and can be accessed here:
 
